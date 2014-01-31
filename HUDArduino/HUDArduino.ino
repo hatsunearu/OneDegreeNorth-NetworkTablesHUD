@@ -1,4 +1,4 @@
-int s;
+byte s;
 
 void setup() {
 	pinMode(6, OUTPUT);
@@ -13,19 +13,19 @@ void loop() {
 	if(Serial.available() > 0) {
 		s = Serial.read();
 	}
-	if(s == 0) {
+	if(s == '0') {
 		off();
 	}
-	else if (s == 1) {
+	else if (s == '1') {
 		left();
 	}
-	else if (s == 2) {
+	else if (s == '2') {
 		right();
 	}
-	else if (s == 3) {
+	else if (s == '3') {
 		both();
 	}
-	
+	Serial.println(s);
 }
 
 void left() {
