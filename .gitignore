@@ -4,3 +4,5 @@
 *.jar
 *.war
 *.ear
+/HUDJavaDS/HUDJava/nbproject/private/
+/HUDJavaDS/HUDJava/build/
